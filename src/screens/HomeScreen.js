@@ -1,51 +1,74 @@
 import React from 'react';
-import {Text, Image, View, TouchableOpacity} from 'react-native';
-import {Ionicons} from 'react-native-vector-icons';
+import { Text, Image, View, TouchableOpacity } from 'react-native';
+import { Ionicons } from 'react-native-vector-icons';
 
+const HomeScreen = (props) => {
+  return (
+    <View style={{ flex: 1, backgroundColor: '#4770ED', borderRadius: 30, padding: 20 }}>
+      <View style={{ marginTop: 80 }}>
+        <Image source={require('../picture/cold3.jpeg')} style={{ width: '100%', height: 350, resizeMode: 'cover' }} />
+      </View>
+      <View style={{ paddingTop: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <Text style={{ fontSize: 30, color: 'white', fontWeight: 'bold' }}>COVID-19</Text>
+      </View>
 
-const HomeScreen=(props)=>{
-   return(
-       <View style={{flex:1, backgroundColor:"#4770ED", borderRadius:30, padding:20 }}>
-         <View style={{marginTop:80}}>
-         <Image source={require('../picture/cold3.jpeg')} style={{width:"100%", height:350, resizeMode:"cover"}}/>
-       </View>
-       <View style={{paddingTop:"20%", display:"flex", justifyContent:"center", alignItems:"center"}}>
-           <Text style={{fontSize:30, color:"white", fontWeight:"bold"}}>COVID-19</Text>
-       </View>
-      
-      
-       <View style={{paddingTop:28}}>
-         <Text style={{color:"#A8ACF9", fontSize:12, fontWeight:"500", display:"flex", justifyContent:"center", alignItems:"center"}}>
-         Lorem Ipsum is simply dummy text of the printing and 
-         </Text>
-         </View>
-
-         <View style={{paddingTop:8, display:"flex", justifyContent:"center", alignItems:"center"}}>
-         <Text style={{color:"#A8ACF9", fontSize:12, fontWeight:"500"}}>
-             typesetting industry. Lorem Ipsum has been the
+      <View style={{ paddingTop: 28 }}>
+        <Text
+          style={{
+            color: '#A8ACF9',
+            fontSize: 12,
+            fontWeight: '500',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          Lorem Ipsum is simply dummy text of the printing and
         </Text>
-         </View>
+      </View>
 
-         <View style={{paddingTop:8, display:"flex", justifyContent:"center", alignItems:"center"}}>
-         <Text style={{color:"#A8ACF9", fontSize:12, fontWeight:"500"}}>industry's standard dummy text ever since the 1500s.</Text>
-         </View>
-         
+      <View style={{ paddingTop: 8, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <Text style={{ color: '#A8ACF9', fontSize: 12, fontWeight: '500' }}>
+          typesetting industry. Lorem Ipsum has been the
+        </Text>
+      </View>
 
-       <TouchableOpacity onPress={
-           ()=>{props.navigation.push('Main')}
-         }>
-           <View style={{justifyContent:"space-between", alignItems:"center",backgroundColor:"white", flexDirection:"row", width:"100%", height:52, borderRadius:5, marginTop:"25%", paddingLeft:20, paddingRight:20}}>
-             <Text style={{fontWeight:"bold", fontSize:16}}>Get Started</Text>
-             <Ionicons style={{backgroundColor:"blue", paddingLeft:10, paddingRight:10, borderRadius:5 }}
-               name="ios-arrow-round-forward"
-               size={30}
-               color="white"/>
-           </View>
+      <View style={{ paddingTop: 8, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <Text style={{ color: '#A8ACF9', fontSize: 12, fontWeight: '500' }}>
+          industry's standard dummy text ever since the 1500s.
+        </Text>
+      </View>
 
-       </TouchableOpacity>
-       </View>
-     
-   );
-}
+      <TouchableOpacity
+        onPress={() => {
+          props.navigation.push('Main');
+        }}
+      >
+        <View
+          style={{
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            backgroundColor: 'white',
+            flexDirection: 'row',
+            width: '100%',
+            height: 52,
+            borderRadius: 5,
+            marginTop: '25%',
+            paddingLeft: 20,
+            paddingRight: 20,
+          }}
+        >
+          <Text style={{ fontWeight: 'bold', fontSize: 16 }}>Get Started</Text>
+          <Ionicons
+            style={{ backgroundColor: 'blue', paddingLeft: 10, paddingRight: 10, borderRadius: 5 }}
+            name="ios-arrow-round-forward"
+            size={30}
+            color="white"
+          />
+        </View>
+      </TouchableOpacity>
+    </View>
+  );
+};
 
-export default HomeScreen
+export default HomeScreen;
