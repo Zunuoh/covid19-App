@@ -16,11 +16,12 @@ const HomeScreen = (props) => {
         <Text
           style={{
             color: '#A8ACF9',
-            fontSize: 12,
+            fontSize: 15,
             fontWeight: '500',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
+            paddingLeft:11
           }}
         >
           Lorem Ipsum is simply dummy text of the printing and
@@ -28,13 +29,13 @@ const HomeScreen = (props) => {
       </View>
 
       <View style={{ paddingTop: 8, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <Text style={{ color: '#A8ACF9', fontSize: 12, fontWeight: '500' }}>
+        <Text style={{ color: '#A8ACF9', fontSize: 15, fontWeight: '500' }}>
           typesetting industry. Lorem Ipsum has been the
         </Text>
       </View>
 
       <View style={{ paddingTop: 8, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <Text style={{ color: '#A8ACF9', fontSize: 12, fontWeight: '500' }}>
+        <Text style={{ color: '#A8ACF9', fontSize: 15, fontWeight: '500' }}>
           industry's standard dummy text ever since the 1500s.
         </Text>
       </View>
@@ -46,6 +47,7 @@ const HomeScreen = (props) => {
       >
         <View
           style={{
+            display:"flex",
             justifyContent: 'space-between',
             alignItems: 'center',
             backgroundColor: 'white',
@@ -53,14 +55,14 @@ const HomeScreen = (props) => {
             width: '100%',
             height: 52,
             borderRadius: 5,
-            marginTop: '25%',
+            marginTop: '20%',
             paddingLeft: 20,
             paddingRight: 20,
           }}
         >
-          <Text style={{ fontWeight: 'bold', fontSize: 16 }}>Get Started</Text>
+          <Text style={{ fontWeight: 'bold', fontSize: 16, display:"flex", alignItems:"center", justifyContent:"center", marginTop:-40}}>Get Started</Text>
           <Ionicons
-            style={{ backgroundColor: 'blue', paddingLeft: 10, paddingRight: 10, borderRadius: 5 }}
+            style={{ backgroundColor: '#4770ED', paddingLeft: 10, paddingRight: 10, borderRadius: 5, marginTop:-40 }}
             name="ios-arrow-round-forward"
             size={30}
             color="white"

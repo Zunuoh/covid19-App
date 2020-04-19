@@ -6,7 +6,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 const MainScreen = () => {
   return (
     <View style={{ flex: 1, paddingLeft: 20, paddingRight: 20, borderRadius: 30, backgroundColor: '#EDECF2' }}>
-      <View style={{ paddingTop: 60, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <View style={{ paddingTop: 90, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <Text style={{ fontWeight: 'bold', fontSize: 25, color: '#091436' }}>Hi, Monito</Text>
         <Text style={{ paddingTop: 10, fontSize: 15 }}>Lorem Ipsum is simply dummy text</Text>
         <Text style={{ paddingTop: 10, fontSize: 15 }}>of the printing and typesetting</Text>
@@ -25,15 +25,19 @@ const MainScreen = () => {
           shadowOffset: { height: 1, width: 0 },
           shadowOpacity: 0.3,
           elevation: 3,
+         
         }}
       >
+        <View style={{display:"flex", flex:8}}>
         <TextInput style={{ height: 52, paddingLeft: 20 }} placeholder="Search here..." />
+        </View>
 
+        <View style ={{display:"flex", flex:1.5}}>
         <Ionicons
           style={{
             backgroundColor: '#4770ED',
-            paddingLeft: 10,
-            paddingRight: 10,
+            paddingLeft: 12,
+          
             paddingTop: 5,
             paddingBottom: 5,
             marginRight: 10,
@@ -43,11 +47,13 @@ const MainScreen = () => {
           size={24}
           color="white"
         />
+        </View>
+     
       </View>
 
-      <View style={{ paddingTop: 40, flexDirection: 'row' }}>
+      <View style={{ paddingTop: 30, flexDirection: 'row' }}>
         <Text style={{ fontWeight: 'bold', fontSize: 20, color: '#091437' }}>Symptoms</Text>
-        <Text style={{ paddingLeft: 180, paddingTop: 5, color: '#C6C6C8' }}>View All</Text>
+        <Text style={{ paddingLeft: 210, paddingTop: 5, color: '#C6C6C8' }}>View All</Text>
       </View>
 
       {/* <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} > */}
@@ -137,7 +143,7 @@ const MainScreen = () => {
             }}
           >
             <Text
-              style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: 6, color: 'white' }}
+              style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: 6, paddingLeft:19,  color: 'white'}}
             >
               Know More
             </Text>
@@ -154,7 +160,7 @@ const MainScreen = () => {
 
       <View style={{ paddingTop: 40, flexDirection: 'row' }}>
         <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#091437' }}>Requirements</Text>
-        <Text style={{ paddingLeft: 140, paddingTop: 5, color: '#C6C6C8', fontWeight: '500' }}>View All</Text>
+        <Text style={{ paddingLeft: 180, paddingTop: 5, color: '#C6C6C8', fontWeight: '500' }}>View All</Text>
       </View>
 
       <View
